@@ -19,6 +19,48 @@
     <title>CSS Framework + JS Library</title>
   </head>
   <body>
+    <header class="dashboard-header">
+      <h1 class="dashboard-main-title">CampusCart</h1>
+      <p class="dashboard-subtitle">by Giancarlo Lawan of S16 Team 1</p>
+    </header>
+
+    <main class="dashboard-grid-container">
+      <div class="row g-4 justify-content-center">
+        <!--Listings Posted Per Day-->
+        <div class="col-12 col-lg-4">
+          <div class="card border-0 dashboard-card">
+            <div class="card-body card-flex-layout">
+              <h3 class="card-title">Listings Posted Per Day</h3>
+              <div class="chart-container">
+                <canvas id="listingsLineChart"></canvas>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--Completed vs Pending Claims-->
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="card border-0 dashboard-card">
+            <div class="card-body card-flex-layout">
+              <h3 class="card-title">Completed vs Pending Claims</h3>
+              <div class="chart-container">
+                <canvas id="claimsDoughnutChart"></canvas>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--Top Sellers by Number of Listings-->
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="card border-0 dashboard-card">
+            <div class="card-body card-flex-layout">
+              <h3 class="card-title">Top Sellers by Number of Listings</h3>
+              <div class="chart-container">
+                <canvas id="sellersBarChart"></canvas>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
     <script src="scripts.js"></script>
   </body>
 </html>
